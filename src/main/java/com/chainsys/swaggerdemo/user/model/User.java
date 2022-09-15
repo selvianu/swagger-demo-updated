@@ -1,4 +1,4 @@
-package com.chainsys.swaggerdemo.model;
+package com.chainsys.swaggerdemo.user.model;
 
 public class User {
 	private Integer id;

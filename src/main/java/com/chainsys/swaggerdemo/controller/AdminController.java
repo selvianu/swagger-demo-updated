@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.chainsys.swaggerdemo.model.User;
+import com.chainsys.swaggerdemo.user.model.User;
 
 @RestController
 public class AdminController {
@@ -24,7 +24,7 @@ public class AdminController {
 		return "to delete user";
 	}
 
-	@GetMapping
+	@GetMapping("/listusers")
 	public List<User> listOfUsers() {
 		System.out.println("listing users" + users);
 		return users;

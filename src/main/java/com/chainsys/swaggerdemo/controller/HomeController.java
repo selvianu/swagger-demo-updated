@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.chainsys.swaggerdemo.model.User;
+import com.chainsys.swaggerdemo.user.model.User;
+
 
 @RestController
 //@RequestMapping("/api/users")
@@ -21,7 +22,7 @@ public class HomeController {
 		return "home";
 	}
 
-	@GetMapping("welcome")
+	@GetMapping("/welcome")
 	public String userList() {
 		return "welcomePage";
 	}
